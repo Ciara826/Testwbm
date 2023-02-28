@@ -1,0 +1,88 @@
+body, html{
+	margin: 0;
+}
+
+.hero{
+  background-image: url('images/image1.jpg');
+  background-position: top;
+  background-size: cover;
+  min-height: 1000px;
+  width: auto;
+  height: auto;
+}
+
+/*Logo*/
+
+.logo{
+  background-image: url('images/logo-hbo.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 100px;
+  min-width: 200px;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  animation: shine 9s;
+}
+
+/*Box*/
+.box{
+	background-color: #4a0994;
+	height: auto;
+	width: auto; /*calc ??*/
+}
+
+
+/*Text styling*/
+@font-face {
+  font-family: 'Centra';
+  src:  url('Fonts/CentraNo2-Bold.ttf') format('ttf'),
+        url('Fonts/CentraNo2-Medium.ttf') format('ttf');
+}
+
+.text{
+	font-family: 'Centra', Arial, sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #4a0994;
+	height: auto;
+	width: 400px; 
+	top: -200px;
+	padding: 20px 20px 2px 20px;
+	color: #fff;
+	position: relative;
+	animation: slidein 5s;
+	animation-delay: 2s;
+	line-height: 10px;
+}
+
+.line1{
+	color: #9fc5e8;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.line2{
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+/*Animation*/
+@keyframes slidein{
+  0%   {left:0px; top:-200px; width: 400px;}
+  25%  {left:0px; top:0px; width: 400px;}
+  50%  {top:0px; left:0px; width: 700px;}
+  75%  {left:0px; top:0px; width: 400px;}
+  100% {left:0px; top:-200px; width: 400px;}
+}
+
+@keyframes shine{
+  0%   {filter: opacity(50%);}
+  25%  {filter: opacity(100%);}
+  50%  {filter: opacity(50%);}
+  75%  {filter: opacity(50%);}
+  100% {filter: opacity(100%);}
+}
+
+
+
